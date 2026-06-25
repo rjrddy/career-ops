@@ -1,163 +1,79 @@
-\documentclass[11pt,letterpaper]{article}
-\usepackage[letterpaper,margin=0.3in]{geometry}
-\usepackage[utf8]{inputenc}
-\usepackage{mdwlist}
-\usepackage[default]{lato}
-\usepackage[T1]{fontenc}
-\usepackage{textcomp}
-\usepackage{fontawesome}
-\usepackage{enumitem}
-\DeclareFontFamily{U}{fontawesomeOne}{}
-\DeclareFontShape{U}{fontawesomeOne}{m}{n}
-{<-> FontAwesome--fontawesomeone}{}
-\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont}
-\pagestyle{empty}
-\setlength{\tabcolsep}{0em}
+# Raj Reddy
 
-% indentsection style, used for sections that aren't already in lists
-% that need indentation to the level of all text in the document
-\newenvironment{indentsection}[1]%
-{\begin{list}{}%
-{\setlength{\leftmargin}{#1}}%
-     \item[]
-}
-{\end{list}}
+(352) 530-3397 · rajreddy23@outlook.com · github.com/rjrddy · linkedin.com/in/raj-reddy-1 · raj-reddy.com
 
-% opposite of above; bump a section back toward the left margin
-\newenvironment{unindentsection}[1]%
-{\begin{list}{}%
-{\setlength{\leftmargin}{-0.5#1}}%
-\item[]%
-}
-{\end{list}}
+---
 
-% format two pieces of text, one left aligned and one right aligned
-\newcommand{\headerrow}[2]
-{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
-#1 &
-#2 \\
-\end{tabular*}}
+## Education
 
-% make "C++" look pretty when used in text by touching up the plus signs
-\newcommand{\CPP}
-{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+**University of Utah** — Salt Lake City, UT
+*B.S. Computer Science | August 2020 – May 2025*
 
-% and the actual content starts here
-\begin{document}
+**Relevant Coursework:** Computer Systems, Machine Learning, Computer Graphics, Algorithms, Software Practice I & II, Database Systems, Computer Networks, Foundations of Data Analysis, Models of Computation, Linear Algebra
 
-\begin{center}
-    {\LARGE \textbf{Raj Reddy}}\\
-    \vspace{0.05cm}
-    \raisebox{-0.2\height} \ \  (352) 530-3397 
-    \hfill\raisebox{-0.2\height} \ \ rajreddy23@outlook.com
-    \hfill \raisebox{-0.2\height}  \ \ github.com/rjrddy
-    \hfill \raisebox{-0.2\height}  \ \ linkedin.com/in/raj-reddy-1
-     \hfill \raisebox{-0.2\height}  \ \ raj-reddy.com
-\end{center}
+---
 
-\hrule
-\vspace{-1em}
-\subsection*{\Large Education}
+## Skills
 
-\renewcommand\labelitemi{}
-\begin{itemize}[leftmargin=1em]
-    \parskip=0.1em
-        
-    \item
-          \headerrow
-          {\textbf{University of Utah}}
-          {\textbf{Salt Lake City, UT}}   
-          \headerrow
-          {\emph{B.S. Computer Science}}
-          {\emph{August 2020 -- May 2025}}
-          \item \textbf{Relevant Coursework:} Computer Systems, Machine Learning, Computer Graphics, Algorithms, Software Practice I \& II, Database Systems, Computer Networks, Foundations of Data Analysis, Models of Computation, and Linear Algebra.
-                  
-\end{itemize}
+- **Languages:** Python, Java, C++, C#, SQL
+- **Software:** PyTorch, Pandas, NumPy, React, Node.js, AWS, Azure, Docker, Git, REST, Django, MongoDB, Linux
 
-\hrule
-\vspace{-1em}
-\subsection*{\Large Skills}
+---
 
-\hyphenpenalty=1000
-\begin{itemize}[leftmargin=1em]
-    \parskip=0.1em
-    \item \textbf{Languages:}
-          Python, Java, C++, TypeScript, SQL
-    \item \textbf{Software:}
-        Pandas, NumPy, React, Node.js, AWS, Azure, Docker, Next.js, REST, Django, MongoDB, Linux       
-    
-          
-\end{itemize}
+## Experience
 
-\hrule
-\vspace{-1em}
-\subsection*{\Large Experience}
+**L3Harris Technologies** — Greenville, TX
+*Associate Software Engineer | June 2025 – Present*
+- Developed signal processing modules in Python and C++ on embedded systems, collaborating with hardware teams to optimize performance and resource utilization.
+- Built microservices for high-frequency data ingestion, processing, and storage, leveraging Podman and serverless functions.
+- Automated CI/CD testing with pipelines, integrating static code analysis and integration testing.
 
-\renewcommand\labelitemi{}
-\renewcommand\labelitemii{$\bullet$}
-\begin{itemize}[leftmargin=1em]
-    \parskip=0.1em
+**Doxy.me** — Charleston, SC
+*Software Engineering Intern | August 2024 – May 2025*
+- Built transformer-based models with PyTorch and Llama, integrating WebRTC for real-time video streaming.
+- Deployed inference pipelines on SageMaker & Fargate, improving diagnostic accuracy with reinforcement learning.
+- Authored and maintained YAML-based configuration files for CI/CD pipelines, cloud infrastructure, and application deployments, enabling reproducible environments and streamlined releases.
 
-        \item
-          \headerrow
-          {\textbf{L3Harris Technologies}}
-          {\textbf{Greenville, TX}}
-          \headerrow
-          {\emph{Associate Software Engineer}}
-          {\emph{June 2025 -- Present}}
-          \begin{itemize*}
-                \item Developed signal processing modules in Python and C++ on embedded systems, collaborating with hardware teams to optimize performance and resource utilization.
-                \item Built microservices for high-frequency data ingestion, processing, and storage, leveraging Podman and serverless functions.
-                \item Automated CI/CD testing with pipelines, integrating static code analysis, and integration testing.
-            \end{itemize*}
+**University of Utah** — Salt Lake City, UT
+*Undergraduate Research Assistant – FuTURES Lab | May 2024 – June 2025*
+- Analyzed and optimized large-scale datasets, enhancing software configuration testing with tools like gcov and CMake, increasing code coverage by 30% on real-world APIs such as Libpng and PyTorch.
+- Expanded OSS-Fuzz testing coverage, using compile-time options to improve the robustness of full-stack libraries.
 
-        \item
-          \headerrow
-          {\textbf{Doxy.me}}
-          {\textbf{Charleston, SC}}
-          \headerrow
-          {\emph{Software Engineering Intern}}
-          {\emph{August 2024 -- May 2025}}
-          \begin{itemize*}
-                \item Built transformer-based models with PyTorch and Llama, integrating WebRTC for real-time video streaming.  
-                \item Deployed inference pipelines on SageMaker \& Fargate, improving diagnostic accuracy with reinforcement learning.  
-            \end{itemize*}
-        
-    \headerrow
-          {\textbf{University of Utah}}
-          {\textbf{Salt Lake City, UT}}
-          \headerrow
-          {\emph{Undergraduate Research Assistant - FuTURES Lab}}
-          {\emph{May 2024 --  Jun 2025}}
-          \begin{itemize*}
-            \item Analyzed and optimized large-scale datasets, enhancing software configuration testing with tools like gcov and CMake, increasing code coverage by 30\% on real-world APIs such as Libpng and PyTorch.
-            \item Expanded OSS-Fuzz testing coverage, using compile-time options to improve the robustness of full-stack libraries.
-          \end{itemize*}
-                          
-    \item
-          \headerrow
-          {\textbf{HEXstream}}
-          {\textbf{Chicago, IL}}
-          \headerrow
-          {\emph{Software Engineering Intern}}
-          {\emph{May 2022 -- Aug 2022}}
-          \begin{itemize*}
-            \item Engineered backend ETL pipelines integrating data from 25+ enterprise sources into Azure SQL and Azure Data Lake. 
-            \item Developed automated workflows for ingestion, cleansing, and aggregation, supporting distributed analytics systems.
-          \end{itemize*}
-                  
-\end{itemize}
+**HEXstream** — Chicago, IL
+*Software Engineering Intern | May 2022 – August 2022*
+- Engineered backend ETL pipelines integrating data from 25+ enterprise sources into Azure SQL and Azure Data Lake.
+- Developed automated workflows for ingestion, cleansing, and aggregation, supporting distributed analytics systems.
 
-\hrule
-\vspace{-1em}
-\subsection*{\Large Projects}
+---
 
-\hyphenpenalty=1000
-\begin{itemize}[leftmargin=1em,noitemsep]
-    \item \textbf{University Course Planning/Review Platform:} Built a multi-service data platform enabling student schedule matching, course overlap detection, and behavioral insights. Developed ETL pipelines in Python to process thousands of course records, user preferences, and time-series activity logs. Built a responsive frontend using React + Tailwind, including interactive dashboards, heatmaps, calendar visualizations, and search interfaces.
-    \item \textbf{Accountability Tracker:} Built a full stack Accountability Tracker with Next.js and TypeScript for managing daily goals and recurring tasks. Added Firebase Auth, localStorage guest support, and PostgreSQL with Prisma for persistent data storage. Created progress visualizations and social features to improve engagement and accountability. 
-    \item \textbf{Ray Tracing Engine:} Created an interactive WebGL-based ray tracing engine in JavaScript, featuring realistic reflections, dynamic lighting, and customizable environment maps. Implemented shaders and user controls for rendering techniques, scene adjustments, and interactivity.
+## Projects
 
-\end{itemize}
+### Current (on CV)
 
-\end{document}
+- **University Course Planning/Review Platform:** Built a multi-service data platform enabling student schedule matching, course overlap detection, and behavioral insights. Developed ETL pipelines in Python to process thousands of course records, user preferences, and time-series activity logs. Built a responsive frontend using React + Tailwind, including interactive dashboards, heatmaps, calendar visualizations, and search interfaces.
+- **Configuration Fuzzer:** Developed a configuration fuzzing tool for OSS-Fuzz, automating build generation to identify critical compile-time configurations and improve code coverage.
+- **Ray Tracing Engine:** Created an interactive WebGL-based ray tracing engine in JavaScript, featuring realistic reflections, dynamic lighting, and customizable environment maps. Implemented shaders and user controls for rendering techniques, scene adjustments, and interactivity.
+
+---
+
+### Project Ideas by Role
+
+#### SWE / Full-Stack
+- **TypeScript API Gateway** — Build a lightweight reverse proxy in TypeScript/Node.js with rate limiting, auth middleware, and request logging. Shows backend systems thinking and TypeScript depth. Relevant to: Harvey, GPTZero, Breeze, Cassidy.
+- **Real-Time Collaborative Whiteboard** — WebSocket-based shared canvas (React + Node.js + Redis pub/sub) with conflict resolution and presence indicators. Shows you can ship full-stack features with real-time constraints. Relevant to: Airtable, Julius AI, Continue.
+
+#### ML / AI Engineer
+- **RAG Pipeline from Scratch** — Build a document Q&A system without a framework: chunk PDFs, embed with a local model (e.g. sentence-transformers), store in a vector DB (Chroma or Qdrant), retrieve and rerank, generate with an LLM. Shows you understand the internals, not just `LangChain.from_docs()`. Relevant to: Centralize, Ema, Reflexivity, Brain Co., US Mobile, Cassidy.
+- **LLM Evaluation Harness** — A CLI tool that runs a suite of prompts against multiple models (OpenAI, Anthropic, local), scores outputs with configurable metrics (BLEU, G-Eval, custom rubric), and diffs results across versions. Shows ML rigor and eval thinking. Relevant to: Centralize, Ema, Quora, Fastino AI.
+
+#### Data Engineering
+- **Streaming ETL Pipeline** — Kafka → Faust/Flink consumer → Postgres/DuckDB sink with schema validation and dead-letter queuing. Extend the HEXstream story with modern streaming. Relevant to: Perplexity, Samsara, DataKind, Evio.
+- **dbt + DuckDB Analytics Stack** — Model a public dataset (e.g. NYC taxi or GitHub archive) end-to-end: raw ingestion → staging → marts → dashboard. Shows modern data stack fluency. Relevant to: dbt Labs, Tinybird, Hightouch.
+
+#### DevOps / Platform / SRE
+- **Kubernetes Operator** — Write a custom CRD + controller in Python (kopf) or Go that manages lifecycle of a simple app (e.g. auto-scales based on a custom metric). Shows platform engineering depth. Relevant to: TensorWave, Peec AI, Rula.
+- **Internal Developer Platform (IDP) CLI** — A CLI tool that scaffolds, deploys, and monitors services on a local k3s cluster. Think: `myplatform deploy --env staging`. Shows DevEx and tooling instincts. Relevant to: n8n, Zapier DevOps.
+
+#### Forward Deployed Engineer
+- **Customer Integration Framework** — A Node.js/Python SDK skeleton that adapts an API (e.g. Salesforce or HubSpot) to a standardized internal schema, with webhook handling, retry logic, and an admin dashboard. Shows the customer-facing integration work FDE roles actually do. Relevant to: OpenAI FDE, LangChain Deployed, Northslope, Firecrawl, OpenRouter.
+- **AI Workflow Automation Demo** — Connect 3 tools (e.g. Notion → LLM summarizer → Slack notifier) via a self-hosted n8n or custom orchestrator. Build a polished demo with a README targeted at non-technical users. Relevant to: Sierra, Decagon, Clera, Ascertain.

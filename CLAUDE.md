@@ -52,9 +52,15 @@ AI-powered job search automation built on Claude Code: pipeline tracking, offer 
 | `data/applications.md` | Application tracker |
 | `data/pipeline.md` | Inbox of pending URLs |
 | `data/scan-history.tsv` | Scanner dedup history |
+| `data/bank.mjs` | Project & experience bank — master pool for CV tailoring |
 | `portals.yml` | Query and company config |
-| `templates/cv-template.html` | HTML template for CVs |
-| `generate-pdf.mjs` | Playwright: HTML to PDF |
+| `cv.tex` | Canonical CV source (LaTeX, lato font, for local compile) |
+| `cv.md` | Canonical CV (Markdown, synced with cv.tex) |
+| `generate-latex-cvs.mjs` | Generates 17+ tailored LaTeX CVs from the bank |
+| `output/` | Compiled PDFs (sandbox font: Charter 11pt) |
+| `output/tex/` | Canonical .tex files (lato 11pt, for local MacTeX compile) |
+| `templates/cv-template.html` | HTML template for CVs (legacy) |
+| `generate-pdf.mjs` | Playwright: HTML to PDF (legacy) |
 | `article-digest.md` | Compact proof points from portfolio (optional) |
 | `interview-prep/story-bank.md` | Accumulated STAR+R stories across evaluations |
 | `interview-prep/{company}-{role}.md` | Company-specific interview intel reports |
@@ -243,6 +249,69 @@ Default modes are in `modes/` (English). Additional language-specific modes are 
 3. Only footer/navbar without JD = closed. Title + description + Apply = active.
 
 **Exception for batch workers (`claude -p`):** Playwright is not available in headless pipe mode. Use WebFetch as fallback and mark the report header with `**Verification:** unconfirmed (batch mode)`. The user can verify manually later.
+
+---
+
+## LaTeX CV Generation System
+
+### Overview
+
+CVs are generated from two sources of truth:
+
+- **`cv.tex`** — canonical CV (lato 11pt, fontawesome). Compile locally with MacTeX to get the exact output. Keep this in sync whenever you update your experience or projects.
+- **`cv.md`** — Markdown mirror of cv.tex. Used by evaluation modes to read your background. Keep it in sync with cv.tex.
+- **`data/bank.mjs`** — master pool of projects and extra experiences used to tailor each CV automatically.
+- **`generate-latex-cvs.mjs`** — reads the bank, scores projects against each job's tags, and compiles 17+ PDFs.
+
+### How the Bank Works
+
+Every entry in `data/bank.mjs` has a `status` field:
+
+- `'built'` — finished and eligible to appear on CVs. The generator will select it when it matches a job's tags.
+- `'idea'` — tracked but not yet built. Ignored by the generator until you flip it to `'built'`.
+
+**To add a finished project:**
+1. Open `data/bank.mjs`
+2. Add an entry to the `projects` array (or update an existing `'idea'` entry):
+```js
+{
+  id: 'my-project',
+  title: 'My Project',
+  status: 'built',              // flip from 'idea' when done
+  tags: ['llm', 'python', 'api'],  // match the skills/themes of target roles
+  latex: String.raw`\item \textbf{My Project:} One to two sentence description that fits on a CV line.`,
+},
+```
+3. Run `node generate-latex-cvs.mjs` — all 17 CVs regenerate automatically with the best-fit projects per role.
+
+**To add a freelance gig, open-source contribution, or extra role:**
+Add to the `experiences` array in `data/bank.mjs` using the same pattern. Extra experiences are injected into the Experience section when their tags match the job.
+
+### Tag Strategy
+
+Tags are how the generator decides which projects go on which CV. Use keywords that describe the role's core themes — not just technologies. Good tags: `llm`, `rag`, `fullstack`, `data`, `etl`, `backend`, `deployed`, `integration`, `systems`, `real-time`. The project with the most matching tags wins a slot.
+
+Each job in `generate-latex-cvs.mjs` has a `tags` array (e.g. `['llm', 'rag', 'ai', 'python', 'ml']` for ML roles). When you add a new job, give it tags that reflect what matters for that role and the right projects will be picked automatically.
+
+### Generating a One-Off CV
+
+For a new job not in the JOBS array, generate a tailored CV inline:
+1. Read `output/tex/<closest-slug>.tex` as a starting point
+2. Swap the skills section and tweak bullet emphasis to match the JD
+3. Run pdflatex in the sandbox:
+```bash
+pdflatex -interaction=nonstopmode -output-directory="output/" "output/tex/my-job-sandbox.tex"
+```
+
+Or ask the AI to do it — paste the JD and say "make a tailored CV for this".
+
+### CV Formatting Rules (enforced by the generator)
+
+- **Font**: lato 11pt in `.tex` source files (for local compile); Charter 11pt in sandbox-compiled PDFs
+- **Margins**: 0.3in in `.tex` source; 0.22in in sandbox PDFs (to guarantee 1-page fit at 11pt)
+- **1 page, always**: all CVs must compile to exactly 1 page. Verify with `pdfinfo output/*.pdf | grep Pages`
+- **Full-page fill**: `\vspace{\stretch{1}}` between sections distributes remaining whitespace so there is no blank gap at the bottom
+- **Structure**: Header → Education → Skills → Experience → Projects (always this order)
 
 ---
 
