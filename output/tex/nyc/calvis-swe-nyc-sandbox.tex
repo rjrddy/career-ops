@@ -1,0 +1,130 @@
+\documentclass[11pt,letterpaper]{article}
+\usepackage[letterpaper,margin=0.22in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{mdwlist}
+\usepackage{charter}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{enumitem}
+\pagestyle{empty}
+\setlength{\tabcolsep}{0em}
+
+\newenvironment{indentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{#1}}%
+     \item[]
+}
+{\end{list}}
+\newenvironment{unindentsection}[1]%
+{\begin{list}{}%
+{\setlength{\leftmargin}{-0.5#1}}%
+\item[]%
+}
+{\end{list}}
+\newcommand{\headerrow}[2]
+{\begin{tabular*}{\linewidth}{l@{\extracolsep{\fill}}r}
+#1 &
+#2 \\
+\end{tabular*}}
+\newcommand{\CPP}
+{C\nolinebreak[4]\hspace{-.05em}\raisebox{.22ex}{\footnotesize\bf ++}}
+\begin{document}
+
+\begin{center}
+	{\LARGE \textbf{Raj Reddy}}\\
+	\vspace{0.05cm}
+	(352) 530-3397
+    \hfill rajreddy23@outlook.com
+    \hfill github.com/rjrddy
+    \hfill linkedin.com/in/raj-reddy-1
+    \hfill raj-reddy.com
+\end{center}
+\hrule
+\vspace{\stretch{1}}
+
+\vspace{-1em}
+\subsection*{\Large Education}
+\renewcommand\labelitemi{}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+	\item
+	      \headerrow
+	      {\textbf{University of Utah}}
+	      {\textbf{Salt Lake City, UT}}
+	      \headerrow
+	      {\emph{B.S. Computer Science}}
+	      {\emph{August 2020 -- May 2025}}
+	      \item \textbf{Relevant Coursework:} Computer Systems, Machine Learning, Computer Graphics, Algorithms, Software Practice I \& II, Database Systems, Computer Networks, Foundations of Data Analysis, Models of Computation, and Linear Algebra.
+\end{itemize}
+\hrule
+\vspace{\stretch{1}}
+
+\vspace{-1em}
+\subsection*{\Large Skills}
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em]
+    \parskip=0.1em
+	\item \textbf{Languages:} Python, TypeScript, C++, SQL, Java
+	\item \textbf{Software:} Pandas, NumPy, React, Node.js, AWS, Azure, Docker, Next.js, .NET, REST, Django, MongoDB, Linux
+\end{itemize}
+\hrule
+\vspace{\stretch{1}}
+
+\vspace{-1em}
+\subsection*{\Large Experience}
+\renewcommand\labelitemi{}
+\renewcommand\labelitemii{$\bullet$}
+\begin{itemize}[leftmargin=1em]
+	\parskip=0.1em
+
+	\item
+	      \headerrow
+	      {\textbf{L3Harris Technologies}}
+	      {\textbf{Dallas, TX}}
+	      \headerrow
+	      {\emph{Associate Software Engineer}}
+	      {\emph{June 2025 -- Present}}
+	      \begin{itemize*}
+	      	\item Developed signal processing modules in Python and \CPP{} on embedded systems, collaborating with hardware teams to optimize performance and resource utilization.
+	      	\item Built microservices for high-frequency data ingestion, processing, and storage, leveraging Podman and serverless functions.
+	      	\item Automated CI/CD testing with pipelines, integrating static code analysis and integration testing.
+	      \end{itemize*}
+
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Shipped patient-facing and provider-facing clinical products end to end on a small startup team, owning React and TypeScript frontends, Python backend services, and WebRTC real-time video integrations from design through production with no dedicated PM or designer.
+	      	\item Improved diagnostic accuracy by integrating PyTorch and Llama inference pipelines directly into live provider workflows on AWS SageMaker and Fargate, iterating rapidly against real user behavior and production feedback to close the loop between model output and clinical outcomes.
+	      	\item Reduced release cycle time and environment drift by owning CI/CD configuration and cloud infrastructure automation across multiple production services, enabling the team to ship confidently and frequently without operational overhead.
+	      \end{itemize*}
+
+	\item
+	      \headerrow
+	      {\textbf{University of Utah}}
+	      {\textbf{Salt Lake City, UT}}
+	      \headerrow
+	      {\emph{Undergraduate Research Assistant -- FuTURES Lab}}
+	      {\emph{May 2024 -- Jun 2025}}
+	      \begin{itemize*}
+	      	\item Analyzed and optimized large-scale datasets, enhancing software configuration testing with gcov and CMake, increasing code coverage by 30\% on real-world APIs (Libpng, PyTorch).
+	      	\item Expanded OSS-Fuzz testing coverage using compile-time options to improve the robustness of full-stack libraries.
+	      \end{itemize*}
+\end{itemize}
+\hrule
+\vspace{\stretch{1}}
+
+\vspace{-1em}
+\subsection*{\Large Projects}
+\hyphenpenalty=1000
+\begin{itemize}[leftmargin=1em,noitemsep]
+\item \textbf{University Course Planning/Review Platform} \emph{(Class Best):} Built a multi-service data platform enabling student schedule matching, course overlap detection, and behavioral insights. Developed ETL pipelines in Python to process thousands of course records, user preferences, and time-series activity logs. Built a responsive frontend in React + Tailwind with interactive dashboards, heatmaps, and calendar visualizations.
+\item \textbf{Telehealth Mental Health Diagnosis Tool (Doxy.me):} Built an AI system that analyzes visual, speech, and tonal cues from telehealth sessions using PyTorch and Llama, delivering structured mental health insights to treating physicians via SageMaker and Fargate inference pipelines. Improved diagnostic accuracy using reinforcement learning and WebRTC video integration.
+\item \textbf{Configuration Fuzzer:} Developed a configuration fuzzing tool for OSS-Fuzz, automating build generation to identify critical compile-time configurations and improve code coverage, uncovering previously untested code paths and increasing bug detection effectiveness.
+\end{itemize}
+\vspace{\stretch{1}}
+\end{document}

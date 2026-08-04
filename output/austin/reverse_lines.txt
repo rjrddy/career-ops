@@ -1,0 +1,46 @@
+#include <cstdio>
+#include <cstring>
+#include <algorithm>
+
+// keep buffers static so they live in BSS, not the stack or heap
+static char line[1 << 20]; // 1MB should be plenty for any line
+static char ibuf[1 << 16];
+static char obuf[1 << 16];
+
+int main(int argc, char* argv[]) {
+    if (argc != 3) {
+        fprintf(stderr, "Usage: %s <input> <output>\n", argv[0]);
+        return 1;
+    }
+
+    FILE* in = fopen(argv[1], "r");
+    FILE* out = fopen(argv[2], "w");
+    if (!in || !out) {
+        perror("fopen");
+        if (in) fclose(in);
+        if (out) fclose(out);
+        return 1;
+    }
+
+    // larger buffers = fewer syscalls on big files
+    setvbuf(in, ibuf, _IOFBF, sizeof(ibuf));
+    setvbuf(out, obuf, _IOFBF, sizeof(obuf));
+
+    while (fgets(line, sizeof(line), in)) {
+        size_t len = strlen(line);
+
+        // strip \n or \r\n before reversing
+        bool has_newline = len > 0 && line[len - 1] == '\n';
+        if (has_newline) --len;
+        if (len > 0 && line[len - 1] == '\r') --len;
+
+        std::reverse(line, line + len);
+
+        fwrite(line, 1, len, out);
+        if (has_newline) fputc('\n', out);
+    }
+
+    fclose(in);
+    fclose(out);
+    return 0;
+}

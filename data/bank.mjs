@@ -27,7 +27,7 @@ export const bank = {
       title: 'University Course Planning/Review Platform',
       status: 'built',
       tags: ['fullstack', 'react', 'tailwind', 'python', 'etl', 'data', 'postgresql', 'dashboard', 'search', 'api'],
-      latex: String.raw`\item \textbf{University Course Planning/Review Platform:} Built a multi-service data platform enabling student schedule matching, course overlap detection, and behavioral insights. Developed ETL pipelines in Python to process thousands of course records, user preferences, and time-series activity logs. Built a responsive frontend in React + Tailwind with interactive dashboards, heatmaps, and calendar visualizations.`,
+      latex: String.raw`\item \textbf{University Course Planning/Review Platform} \emph{(Class Best):} Built a multi-service data platform enabling student schedule matching, course overlap detection, and behavioral insights. Developed ETL pipelines in Python to process thousands of course records, user preferences, and time-series activity logs. Built a responsive frontend in React + Tailwind with interactive dashboards, heatmaps, and calendar visualizations.`,
     },
 
     {
@@ -44,6 +44,14 @@ export const bank = {
       status: 'built',
       tags: ['graphics', 'javascript', 'webgl', 'rendering', 'frontend', 'interactive'],
       latex: String.raw`\item \textbf{Ray Tracing Engine:} Created an interactive WebGL-based ray tracing engine in JavaScript, featuring realistic reflections, dynamic lighting, and customizable environment maps. Implemented shaders and user controls for rendering techniques, scene adjustments, and interactivity.`,
+    },
+
+    {
+      id: 'doxyme-mental-health-ai',
+      title: 'Telehealth Mental Health Diagnosis Tool',
+      status: 'built',
+      tags: ['ml', 'llm', 'python', 'pytorch', 'inference', 'real-time', 'research', 'deployed', 'ai', 'data'],
+      latex: String.raw`\item \textbf{Telehealth Mental Health Diagnosis Tool (Doxy.me):} Built an AI system that analyzes visual, speech, and tonal cues from telehealth sessions using PyTorch and Llama, delivering structured mental health insights to treating physicians via SageMaker and Fargate inference pipelines. Improved diagnostic accuracy using reinforcement learning and WebRTC video integration.`,
     },
 
     // ── Ideas — flip status to 'built' when done ───────────────────────────

@@ -10,8 +10,6 @@ data/parser-output/**/*.json
 data/cache/ats-companies/
 reports/*.md
 !reports/.gitkeep
-output/*
-!output/.gitkeep
 batch/logs/*
 !batch/logs/.gitkeep
 batch/batch-state.tsv

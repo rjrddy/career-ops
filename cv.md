@@ -29,10 +29,10 @@
 - Automated CI/CD testing with pipelines, integrating static code analysis and integration testing.
 
 **Doxy.me** — Charleston, SC
-*Software Engineering Intern | August 2024 – May 2025*
-- Built transformer-based models with PyTorch and Llama, integrating WebRTC for real-time video streaming.
-- Deployed inference pipelines on SageMaker & Fargate, improving diagnostic accuracy with reinforcement learning.
-- Authored and maintained YAML-based configuration files for CI/CD pipelines, cloud infrastructure, and application deployments, enabling reproducible environments and streamlined releases.
+*Software Engineer | August 2024 – May 2025*
+- Built a real-time mental health inference system for Doxy.me's telehealth platform, fine-tuning Llama models to predict depression risk, anxiety, and mood indicators from tone, voice, and facial cues captured over live WebRTC sessions, served via SageMaker and Fargate.
+- Improved prediction accuracy of the mental health inference system by applying RL feedback loops over structured clinical signals and physician-validated outcomes from live video consultations.
+- Eliminated environment drift and enabled zero-downtime releases by standardizing CI/CD configuration with YAML-based pipelines across the ML stack.
 
 **University of Utah** — Salt Lake City, UT
 *Undergraduate Research Assistant – FuTURES Lab | May 2024 – June 2025*
