@@ -3453,18 +3453,445 @@ const JOBS = [
     experience: experienceSection([EXP_L3HARRIS_BACKEND, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT]),
     tags: ['backend', 'api', 'security', 'systems', 'integration', 'python', 'deployed', 'microservices'],
   },
+
+  // ── HappyRobot (AI workforce orchestration platform, a16z speedrun) ──────────
+  // Forward Deployed Engineer — same role, three locations (NY / Chicago / SF)
+  {
+    slug: 'happyrobot-fde-nyc',
+    company: 'HappyRobot',
+    role: 'Forward Deployed Engineer',
+    skills: SKILLS.fde,
+    experience: experienceSection([EXP_L3HARRIS_DEFAULT, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT, EXP_HEXSTREAM_DEFAULT]),
+    tags: ['fullstack', 'react', 'node', 'typescript', 'python', 'llm', 'ml', 'ai', 'api', 'integration', 'deployed'],
+  },
+  {
+    slug: 'happyrobot-fde-chicago',
+    company: 'HappyRobot',
+    role: 'Forward Deployed Engineer',
+    skills: SKILLS.fde,
+    experience: experienceSection([EXP_L3HARRIS_DEFAULT, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT, EXP_HEXSTREAM_DEFAULT]),
+    tags: ['fullstack', 'react', 'node', 'typescript', 'python', 'llm', 'ml', 'ai', 'api', 'integration', 'deployed'],
+  },
+  {
+    slug: 'happyrobot-fde-sf',
+    company: 'HappyRobot',
+    role: 'Forward Deployed Engineer',
+    skills: SKILLS.fde,
+    experience: experienceSection([EXP_L3HARRIS_DEFAULT, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT, EXP_HEXSTREAM_DEFAULT]),
+    tags: ['fullstack', 'react', 'node', 'typescript', 'python', 'llm', 'ml', 'ai', 'api', 'integration', 'deployed'],
+  },
+  {
+    slug: 'happyrobot-fde-barcelona',
+    company: 'HappyRobot',
+    role: 'Forward Deployed Engineer',
+    skills: SKILLS.fde,
+    experience: experienceSection([EXP_L3HARRIS_DEFAULT, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT, EXP_HEXSTREAM_DEFAULT]),
+    tags: ['fullstack', 'react', 'node', 'typescript', 'python', 'llm', 'ml', 'ai', 'api', 'integration', 'deployed'],
+  },
+
+  // ── Morgan Stanley (Tokyo, Reliability & Production Engineering, US Equities Overnight Trading) ──
+  {
+    slug: 'morgan-stanley-rpe-tokyo',
+    company: 'Morgan Stanley',
+    role: 'Associate, Reliability & Production Engineering',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{L3Harris Technologies}}
+	      {\textbf{Dallas, TX}}
+	      \headerrow
+	      {\emph{Associate Software Engineer}}
+	      {\emph{June 2025 -- Present}}
+	      \begin{itemize*}
+	      	\item Reduced incident response time on defense sensor platforms by building Python monitoring and diagnostic tooling that surfaced latency and throughput anomalies in real time on embedded Linux systems.
+	      	\item Improved production reliability of high-frequency data ingestion microservices by designing fault-tolerant architectures with Podman and automated recovery patterns, sustaining uptime under strict resource constraints.
+	      	\item Reduced deployment risk across engineering and hardware teams by building CI/CD pipelines with static analysis and integration testing, coordinating releases directly with cross-functional stakeholders under tight timelines.
+	      \end{itemize*}`,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Maintained production uptime for a live ML inference system processing real-time WebRTC video and audio sessions, troubleshooting latency and reliability issues across SageMaker and Fargate deployments.
+	      	\item Reduced environment drift and release risk by standardizing CI/CD configuration with YAML-based pipelines, enabling zero-downtime deployments across the ML stack.
+	      	\item Built TypeScript frontend components surfacing system health and inference status directly to clinical stakeholders, improving visibility into live production behavior.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+    ]),
+    tags: ['systems', 'backend', 'linux', 'monitoring', 'ci-cd', 'production', 'python', 'networking', 'reliability', 'testing'],
+  },
+
+  // ── Hyperfold AI (agentic commerce, Software Engineer) ──────────────────────
+  {
+    slug: 'hyperfold-ai-swe-nyc',
+    company: 'Hyperfold AI',
+    role: 'Software Engineer',
+    skills: SKILLS.fullstack,
+    experience: experienceSection([EXP_L3HARRIS_ML, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT, EXP_HEXSTREAM_DEFAULT]),
+    tags: ['llm', 'ai', 'agent', 'automation', 'api', 'fullstack', 'react', 'node', 'python', 'deployed', 'integration'],
+  },
+
+  // ── Distyl AI (AI-native enterprise platform, Backend SWE) ───────────────────
+  {
+    slug: 'distyl-ai-backend-swe-nyc',
+    company: 'Distyl AI',
+    role: 'Software Engineer, Back End',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      EXP_L3HARRIS_BACKEND,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Built and operated Python backend services powering a real-time ML inference platform, fine-tuning Llama models and deploying them on SageMaker and Fargate to serve structured clinical outputs at scale.
+	      	\item Improved system reliability and observability by instrumenting production inference pipelines with RL feedback loops over physician-validated outcomes, catching model drift before it reached end users.
+	      	\item Eliminated environment drift and enabled zero-downtime releases by standardizing CI/CD configuration with YAML-based pipelines across the ML stack.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+    ]),
+    tags: ['backend', 'python', 'systems', 'microservices', 'ci-cd', 'cloud', 'aws', 'containers', 'deployed', 'ml', 'ai', 'reliability'],
+  },
+
+  // ── Cozmo (AI operating system for property claims, FDE / agent engineer) ───
+  {
+    slug: 'cozmo-fde-nyc',
+    company: 'Cozmo',
+    role: 'Forward Deployed Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{L3Harris Technologies}}
+	      {\textbf{Dallas, TX}}
+	      \headerrow
+	      {\emph{Associate Software Engineer}}
+	      {\emph{June 2025 -- Present}}
+	      \begin{itemize*}
+	      	\item Owned signal processing modules end to end on ambiguous, fast-moving embedded defense projects, translating loosely defined hardware constraints into working software with no formal spec to start from.
+	      	\item Built microservices and CI/CD tooling from scratch on my own initiative, closing gaps in testing and deployment coverage that nobody had assigned to me.
+	      	\item Delivered production releases under strict latency and resource constraints, communicating tradeoffs directly to hardware stakeholders under tight timelines.
+	      \end{itemize*}`,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Owned a real-time ML inference product end to end on a small startup team with no dedicated PM, from initial prototype to production serving live clinical sessions, fine-tuning Llama models and deploying via SageMaker and Fargate.
+	      	\item Reverse engineered unstructured WebRTC session data and clinical inputs into a structured inference pipeline from first principles, since no existing template or vendor tooling covered the problem.
+	      	\item Shipped TypeScript frontend components and backend services under live production constraints, closing the gap between an idea and a working feature in days and owning that distance alone.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+    ]),
+    tags: ['llm', 'ai', 'agent', 'ownership', 'startup', 'deployed', 'python', 'automation', 'integration', 'api'],
+  },
+
+  // ── Ornn (financial infrastructure for AI compute, Junior SWE) ──────────────
+  {
+    slug: 'ornn-junior-swe-nyc',
+    company: 'Ornn',
+    role: 'Junior Software Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      EXP_L3HARRIS_BACKEND,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Owned Python backend services and REST APIs powering a production ML inference platform end to end, deploying on AWS SageMaker and Fargate under real-time performance constraints.
+	      	\item Built React and TypeScript frontend interfaces for the same platform, giving me full-stack ownership from user-facing UI through backend services to infrastructure.
+	      	\item Treated correctness as a hard requirement by standardizing CI/CD configuration and automated testing across the ML stack, eliminating environment drift and enabling zero-downtime releases.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+    ]),
+    tags: ['backend', 'python', 'api', 'fullstack', 'react', 'systems', 'ci-cd', 'testing', 'reliability', 'deployed'],
+  },
+
+  // ── ZOVU (remote, restaurant OS, full-stack proving-ground role) ────────────
+  {
+    slug: 'zovu-fullstack-remote',
+    company: 'ZOVU',
+    role: 'Full-Stack Developer',
+    skills: SKILLS.fullstack,
+    experience: experienceSection([EXP_L3HARRIS_DEFAULT, EXP_DOXYME_EXPANDED, EXP_FUTURES_DEFAULT]),
+    tags: ['fullstack', 'react', 'node', 'typescript', 'api', 'integration', 'data', 'dashboard', 'deployed'],
+  },
+
+  // ── Charta Health (AI operating system for healthcare, Staff SWE) ───────────
+  {
+    slug: 'charta-health-staff-swe',
+    company: 'Charta Health',
+    role: 'Staff Software Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([EXP_L3HARRIS_BACKEND, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT]),
+    tags: ['backend', 'python', 'microservices', 'distributed', 'systems', 'ai', 'llm', 'aws', 'docker', 'deployed', 'ci-cd'],
+  },
+
+  // ── Enigma (SMB data platform, Data Operations Associate) ────────────────────
+  {
+    slug: 'enigma-data-ops-associate-nyc',
+    company: 'Enigma',
+    role: 'Data Operations Associate',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      EXP_L3HARRIS_DEFAULT,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Built Python pipelines that transformed unstructured WebRTC session data into structured, quality-checked clinical outputs used daily by physicians, feeding downstream Llama-based inference on SageMaker and Fargate.
+	      	\item Improved data reliability by validating model outputs against physician-confirmed outcomes, catching quality issues before they reached clinical end users.
+	      	\item Built TypeScript frontend components surfacing data quality and confidence directly to clinical stakeholders.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+      EXP_HEXSTREAM_DEFAULT,
+    ]),
+    tags: ['data', 'etl', 'sql', 'postgresql', 'dashboard', 'analytics', 'quality', 'process', 'reporting'],
+  },
+
+  // ── Amplitude (digital analytics platform, Technical Support Engineer) ──────
+  {
+    slug: 'amplitude-tech-support-eng-nyc',
+    company: 'Amplitude',
+    role: 'Technical Support Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      EXP_L3HARRIS_DEFAULT,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Diagnosed and resolved production data and API issues for Doxy.me's ML inference platform, working directly with clinical stakeholders to translate technical root causes into clear, actionable explanations.
+	      	\item Investigated data quality and pipeline freshness issues across WebRTC session ingestion and downstream inference outputs, building monitoring to catch and communicate issues before they reached end users.
+	      	\item Built TypeScript frontend components and REST APIs, giving me hands-on fluency with the SDKs and integration points customers rely on.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+      EXP_HEXSTREAM_DEFAULT,
+    ]),
+    tags: ['api', 'data', 'etl', 'postgresql', 'integration', 'deployed', 'python'],
+  },
+
+  // ── Kadence (workplace management/AI platform, recruiter-sourced Founding FDE) ──
+  {
+    slug: 'kadence-fde-nyc',
+    company: 'Kadence',
+    role: 'Founding Forward Deployed Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{L3Harris Technologies}}
+	      {\textbf{Dallas, TX}}
+	      \headerrow
+	      {\emph{Associate Software Engineer}}
+	      {\emph{June 2025 -- Present}}
+	      \begin{itemize*}
+	      	\item Owned signal processing modules end to end on ambiguous, fast-moving defense projects, translating unclear technical requirements into working software directly for hardware stakeholders with no formal spec to start from.
+	      	\item Built monitoring and CI/CD tooling from scratch on my own initiative, creating processes where none existed rather than following an established playbook.
+	      	\item Delivered production releases under strict timelines, acting as the primary technical point of contact between engineering and hardware program stakeholders.
+	      \end{itemize*}`,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Earned my role at Doxy.me by cold emailing the CTO and independently building a working mental health inference prototype, translating a business need physicians described into a deployed technical solution before a role existed.
+	      	\item Owned the relationship between engineering output and clinical stakeholders, explaining model behavior and tradeoffs in plain terms to build trust with non-technical users of the platform.
+	      	\item Built TypeScript frontend components and Python backend services end to end, shipping features fast in an environment where priorities shifted week to week.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+    ]),
+    tags: ['deployed', 'integration', 'api', 'ownership', 'startup', 'sql', 'automation', 'fullstack'],
+  },
+
+  // ── Reflection AI (frontier LLM training infrastructure engineer) ───────────
+  {
+    slug: 'reflection-ai-training-infra',
+    company: 'Reflection AI',
+    role: 'Training Infrastructure Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([EXP_L3HARRIS_ML, EXP_DOXYME_DEFAULT, EXP_FUTURES_DEFAULT]),
+    tags: ['ml', 'llm', 'python', 'pytorch', 'inference', 'systems', 'deployed', 'ai', 'research'],
+  },
+
+  // ── Atomic (AI-native supply chain optimization, Forward Deployed Engineer) ──
+  {
+    slug: 'atomic-fde-nyc',
+    company: 'Atomic',
+    role: 'Forward Deployed Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      EXP_L3HARRIS_DEFAULT,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{June 2023 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Built automated Python data pipelines that normalized unstructured WebRTC session data and clinical inputs into structured formats feeding downstream ML models.
+	      	\item Shaped an ML inference model, fine-tuning Llama, to match real clinical workflows, applying RL feedback loops over physician-validated outcomes to keep the model aligned with how the business actually operated.
+	      	\item Built TypeScript frontend interfaces for physicians to interact with and act on AI-generated outputs, and integrated the system end to end with SageMaker and Fargate infrastructure.
+	      \end{itemize*}`,
+      EXP_HEXSTREAM_DEFAULT,
+    ]),
+    tags: ['data', 'etl', 'integration', 'api', 'deployed', 'python', 'fullstack', 'automation'],
+  },
+
+  // ── Open Insurance (stealth insurtech, Founding GTM Engineer) ────────────────
+  {
+    slug: 'open-insurance-gtm-eng-nyc',
+    company: 'Open Insurance',
+    role: 'Founding GTM Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{L3Harris Technologies}}
+	      {\textbf{Dallas, TX}}
+	      \headerrow
+	      {\emph{Associate Software Engineer}}
+	      {\emph{June 2025 -- Present}}
+	      \begin{itemize*}
+	      	\item Built automation and monitoring tooling from scratch on defense sensor platforms, identifying manual, error-prone processes and replacing them with scripted Python workflows with no existing template to follow.
+	      	\item Built microservices for high-frequency data ingestion, integrating multiple sensor data sources into a single reliable pipeline.
+	      	\item Automated CI/CD pipelines with static analysis and integration testing, eliminating manual deployment steps across engineering teams.
+	      \end{itemize*}`,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Built the entire technical system from zero, cold emailing Doxy.me's CTO and independently building a working AI product before the company had a role or process for it, then owned the system end to end after being hired.
+	      	\item Built Python automation pipelines and integrations that pulled structured signals from unstructured WebRTC session data, keeping downstream records clean and reliable for a small team.
+	      	\item Built TypeScript frontend tooling and REST APIs connecting the AI system into a live clinical workflow, extending what off-the-shelf tools could not do.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+      EXP_HEXSTREAM_DEFAULT,
+    ]),
+    tags: ['api', 'integration', 'automation', 'data', 'etl', 'python', 'deployed', 'ownership', 'startup'],
+  },
+
+  // ── Huxley placement — confidential voice AI startup (Tokyo, Full-Stack) ────
+  {
+    slug: 'huxley-voice-ai-fullstack-tokyo',
+    company: 'Confidential Voice AI Startup (via Huxley)',
+    role: 'Full-Stack Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{L3Harris Technologies}}
+	      {\textbf{Dallas, TX}}
+	      \headerrow
+	      {\emph{Associate Software Engineer}}
+	      {\emph{June 2025 -- Present}}
+	      \begin{itemize*}
+	      	\item Collaborated directly with hardware and program stakeholders at a large enterprise defense contractor, translating ambiguous requirements into production software and proposing improvements beyond the original spec.
+	      	\item Built microservices and CI/CD tooling reflecting modern cloud-native architecture patterns on AWS, maintaining awareness of system design across the broader platform.
+	      	\item Delivered production releases under strict timelines, working cross-functionally with hardware, firmware, and program teams.
+	      \end{itemize*}`,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Owned front-end UX for a clinical AI product end to end, building React and TypeScript interfaces from concept to launch and iterating directly with physicians as end users to refine the experience.
+	      	\item Built the product independently at a small startup, cold emailing Doxy.me's CTO and shipping a working prototype before the role existed, then drove it from concept through production.
+	      	\item Contributed across the stack when needed, building Python backend services and integrating WebRTC video and ML inference into the frontend experience.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+      EXP_HEXSTREAM_DEFAULT,
+    ]),
+    tags: ['fullstack', 'react', 'typescript', 'frontend', 'interactive', 'ui', 'deployed', 'startup', 'cloud'],
+  },
+
+  // ── Terra (creator commerce / physical product platform, Software Engineer) ──
+  {
+    slug: 'terra-swe-nyc',
+    company: 'Terra',
+    role: 'Software Engineer',
+    skills: SKILLS_CANONICAL,
+    experience: experienceSection([
+      EXP_L3HARRIS_BACKEND,
+      String.raw`
+	\item
+	      \headerrow
+	      {\textbf{Doxy.me}}
+	      {\textbf{Charleston, SC}}
+	      \headerrow
+	      {\emph{Software Engineer}}
+	      {\emph{August 2024 -- May 2025}}
+	      \begin{itemize*}
+	      	\item Built React and TypeScript frontend components for a production clinical platform, shipping component-driven UI features end to end from design through deployment.
+	      	\item Built Python data pipelines that fed structured session outputs into PostgreSQL analytics tables, modeling relationships between unstructured clinical inputs and downstream ML predictions.
+	      	\item Fine-tuned and deployed Llama models on AWS SageMaker and Fargate, continuously improving inference accuracy through RL feedback loops, the same kind of ML data pipeline work that makes an AI tool smarter over time.
+	      \end{itemize*}`,
+      EXP_FUTURES_DEFAULT,
+      EXP_HEXSTREAM_DEFAULT,
+    ]),
+    tags: ['fullstack', 'typescript', 'react', 'node', 'api', 'postgresql', 'cloud', 'aws', 'ml', 'data', 'deployed'],
+  },
 ];
 
 // ─── City mapping ─────────────────────────────────────────────────────────────
 // List non-NYC slugs here. Everything else defaults to 'nyc'.
 
 const CITY_MAP = {
-  tokyo:   ['cisco-ce-tokyo', 'applied-intuition-onboard-swe', 'synspective-swe-tokyo', 'sakana-rd-swe', 'sakana-product-swe', 'paypay-backend-eng', 'paypay-review-backend', 'jpmorgan-payments-swe-tokyo', 'bjak-applied-ai-tokyo', 'bjak-fullstack-tokyo', 'mercari-sre-tokyo', 'yodo-labs-eoi-tokyo', 'bloomtech-ai-fde-tokyo', 'treasure-ai-pe-tokyo'],
+  tokyo:   ['cisco-ce-tokyo', 'applied-intuition-onboard-swe', 'synspective-swe-tokyo', 'sakana-rd-swe', 'sakana-product-swe', 'paypay-backend-eng', 'paypay-review-backend', 'jpmorgan-payments-swe-tokyo', 'bjak-applied-ai-tokyo', 'bjak-fullstack-tokyo', 'mercari-sre-tokyo', 'yodo-labs-eoi-tokyo', 'bloomtech-ai-fde-tokyo', 'treasure-ai-pe-tokyo', 'morgan-stanley-rpe-tokyo', 'huxley-voice-ai-fullstack-tokyo'],
   austin:  ['pushnami-swe', 'quantiq-swe', 'glimmer-fullstack-austin', 'cloudflare-workers-swe', 'cloudflare-realtime-swe', 'neuralink-swe', 'snh-ai-swe', 'apptronik-motion-data', 'avride-sim-backend', 'sts-digital-front-office', 'apple-swe-austin', 'cisco-data-ml-austin', 'ibm-security-swe-austin', 'expedia-sde-austin', 'embedded-cpp-austin'],
-  chicago: ['drw-risk-swe'],
+  chicago: ['drw-risk-swe', 'happyrobot-fde-chicago'],
   seattle: ['spacex-factory-swe-starlink'],
-  sf:      ['luma-fde-sf'],
-  remote:  ['alinia-ml-infra-remote', 'krepling-fullstack-remote', 'midpage-ai-eng-remote'],
+  sf:      ['luma-fde-sf', 'happyrobot-fde-sf'],
+  barcelona: ['happyrobot-fde-barcelona'],
+  remote:  ['alinia-ml-infra-remote', 'krepling-fullstack-remote', 'midpage-ai-eng-remote', 'zovu-fullstack-remote'],
   // doorlist-fullstack-nyc uses the default nyc bucket
 };
 

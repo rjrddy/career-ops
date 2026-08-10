@@ -37,6 +37,10 @@ modes/_profile.md
 # Secrets (never commit — use .env.example as template)
 .env
 
+# LaTeX compile byproducts (not real outputs)
+output/**/*.aux
+output/**/*.log
+
 # Generated
 .resolved-prompt-*
 node_modules/

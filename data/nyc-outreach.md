@@ -11,7 +11,7 @@
 
 | Rank | Company | Stage | Hiring | Fit | Contact | LinkedIn | CV | Status |
 |------|---------|-------|--------|-----|---------|----------|----|--------|
-| 1 ⭐ | Daytona | Seed | Yes | Dev infra, CI/CD, backend — maps directly to L3Harris + Doxy.me stack | Ivan Burazin (CEO) | [ivanburazin](https://www.linkedin.com/in/ivanburazin/) | daytona-ai-eng-nyc | Pending |
+| 1 ⭐ | Daytona | Seed | Yes | Dev infra, CI/CD, backend — maps directly to L3Harris + Doxy.me stack | Ivan Burazin (CEO) | [ivanburazin](https://www.linkedin.com/in/ivanburazin/) | daytona-ai-eng-nyc | Applied |
 | 2 ⭐ | Thread AI | Seed | Yes | Composable AI infra — ML pipeline + systems fit, ex-Palantir founders, CB Insights AI 100 | Angela McNeal (CEO) | [angelamcneal](https://www.linkedin.com/in/angelamcneal/) | thread-ai-eng-nyc | Pending |
 | 3 ⭐ | Warp | Seed | Yes | AI-native HRIS — fullstack + ML fit, YC-backed, work directly with CEO/CTO | Daisy Budgick (Recruiter) | [daisybudgick](https://www.linkedin.com/in/daisybudgick/) | warp-swe-nyc | Pending |
 | 4 | Tabs | Series A | Yes | AI revenue automation — ML + fullstack fit, $91M raised, applied via portal | Ali Hussain (CEO) | search LinkedIn | tabs-aiml-nyc | Applied (no personal outreach) |
@@ -31,10 +31,10 @@
 | 18 | Fabrik | Seed | No | Proptech / community — weak technical fit, no CTO found, not hiring | Jaclyn Pascocello (CEO) | search LinkedIn | fabrik-swe-nyc | Pending |
 | 19 ⭐ | Interfere | Seed | Yes | Product observability — data infra + real-time ingestion fit, YC S25, 7 people, $5.1M | Luke Shiels (CEO) | [shiels](https://www.linkedin.com/in/shiels/) | interfere-data-eng-nyc | Pending |
 | 20 ⭐ | Office Hours | Growth | Yes | Expert marketplace — exact React/Node/TypeScript stack, profitable hyper-growth, Brooklyn office | Matt Merritt (Head of Growth) | [mattmerritt-su](https://www.linkedin.com/in/mattmerritt-su/) | officehours-fullstack-nyc | Pending |
-| 21 ⭐ | Alinia AI | Seed | Yes | GenAI evaluation/guardrails — direct match to Doxy.me RL feedback + eval work, remote-friendly, $12.7M raised | Ariadna Font Llitjos (CEO) | [ariadna](https://www.linkedin.com/in/ariadna/) | alinia-ml-infra-remote | Pending |
+| 21 ⭐ | Alinia AI | Seed | No (my level) | GenAI evaluation/guardrails — direct match to Doxy.me RL feedback + eval work, remote-friendly, $12.7M raised | Ariadna Font Llitjos (CEO) | [ariadna](https://www.linkedin.com/in/ariadna/) | alinia-ml-infra-remote | Not hiring — my level |
 | 22 | Courier Health | Series A/B | Yes | Patient engagement platform — direct Doxy.me healthtech parallel, $50M Series B (Oak HC/FT) | John Eckhart (CTO) | [jeckhart](https://www.linkedin.com/in/jeckhart/) | courier-health-swe | Pending |
 | 23 | Scaler | Series A | Yes | ESG data platform for real estate — data/ETL/dashboard fit, $10M raised (Plural), Amsterdam + NYC | Zlatan Menkovic (CEO) | [zltn](https://www.linkedin.com/in/zltn/) | scaler-fullstack-nyc | Pending |
-| 24 ⭐ | Antimetal | Series A | Yes | AI infra automation/cloud cost — backend/systems fit, $24M raised, NYC, notable angel roster | Shreyas Iyer (CTO) | [shreyasiyer30](https://www.linkedin.com/in/shreyasiyer30) | antimetal-backend-nyc | Pending |
+| 24 ⭐ | Antimetal | Series A | No (my level) | AI infra automation/cloud cost — backend/systems fit, $24M raised, NYC, notable angel roster | Shreyas Iyer (CTO) | [shreyasiyer30](https://www.linkedin.com/in/shreyasiyer30) | antimetal-backend-nyc | Not hiring — my level |
 | 25 | Rally | Seed/Series A | No | User research CRM — fullstack fit, YC W22, $8.8M seed + $11M Series A, not currently hiring | Alec Robins (CTO) | [alecrobins](https://www.linkedin.com/in/alecrobins/) | rally-fullstack-nyc | Pending |
 | 26 | Krepling | Seed | Yes | E-commerce no-code builder — fullstack fit, remote-first, $3.3M raised, tripling engineering team | Liam Gerada (CEO) | [liam-j-e-gerada](https://www.linkedin.com/in/liam-j-e-gerada-28043a122/) | krepling-fullstack-remote | Pending |
 | 27 | dub | Series A | Yes | Regulated copy-trading app — backend fit, C#/.NET stack, $47M raised, NYC | Justin Reich (VP Eng / CTO) | [reichjustin](https://www.linkedin.com/in/reichjustin/) | dub-backend-nyc | Pending |
@@ -126,7 +126,9 @@
 **Industry:** B2B SaaS / Dev Tools
 **Stage:** Seed
 **Hiring:** Yes
-**What they do:** Self-hosted dev environment management platform — secure, automated setup for any IDE or Git provider.
+**What they do:** The agent-native runtime layer for modern software development — spins up secure, sandboxed environments in under 90ms, used by both human developers and AI agents. Open source, trusted by thousands, backed by top-tier investors.
+**Apply directly:** careers@daytona.io — "successful candidates will be contacted for an interview."
+**Status:** Applied 2026-08-04 — sent directly to careers@daytona.io with resume attached (`daytona-ai-eng-nyc.pdf`). Awaiting response.
 
 ### Contacts
 - **Ivan Burazin** — CEO & Co-Founder | [linkedin.com/in/ivanburazin](https://www.linkedin.com/in/ivanburazin/)
@@ -134,15 +136,15 @@
 - Recruiter: not found
 
 ### CV
-`output/nyc/nyc-startup-general.pdf`
+`output/nyc/daytona-ai-eng-nyc.pdf`
 
 ### LinkedIn Message (to CEO — 300 char)
-> Hi Ivan, I came across Daytona and love the idea of making dev environments reproducible and self-hostable. I'm a software engineer with full-stack and ML infra experience at Doxy.me and L3Harris. Open to chatting if you have anything coming up?
+> Hi Ivan, I came across Daytona and love the idea of a runtime built for agents as much as humans — sub-90ms sandboxes is a real systems problem. I'm a software engineer with infra and ML experience at Doxy.me and L3Harris. Open to chatting if you have anything coming up?
 
 ### Email / Wellfound Message
 > Hi Ivan,
 >
-> I came across Daytona and wanted to reach out directly. Reproducible, self-hosted dev environments that work with any IDE or Git provider is the kind of infrastructure problem that's been painful for a long time, and I think you're solving it the right way.
+> I came across Daytona and wanted to reach out directly. Building the runtime layer for a world where AI agents spin up and tear down environments as often as humans do, and getting that down to under 90ms, is a serious infrastructure problem, and open-sourcing it is the right way to earn trust at that layer of the stack.
 >
 > I'm a software engineer currently in Dallas — more than happy to relocate to NYC with or without relocation support. I'm currently at L3Harris building embedded systems and microservices. Before that, at Doxy.me, I shipped ML inference pipelines in PyTorch and Llama, built React and Node.js features on top of WebRTC, and owned CI/CD across the stack. I'm looking for an early-stage role where I can own things end-to-end and see my work land with real users.
 >
@@ -701,7 +703,7 @@
 **Website:** alinia.ai
 **Industry:** AI / GenAI Evaluation & Compliance
 **Stage:** Seed ($12.7M total — $2.4M pre-seed led by Speedinvest/Precursor, $7.5M seed led by Mouro Capital)
-**Hiring:** Yes — Machine Learning Engineer (Infra & Deployment, remote EU/US-friendly), Applied Research Scientist
+**Hiring:** Not hiring for my experience level — open roles (ML Engineer Infra & Deployment, Applied Research Scientist) require more seniority than Raj currently has
 **What they do:** A control layer for generative AI — evaluation, guardrails, and monitoring that let subject matter experts guide LLM output against company policies and regulatory requirements. Customers include Banco Santander and Origin Financial. Founded by Ariadna Font Llitjos (ex-Twitter ML Platform, PhD Carnegie Mellon) and Carlos Munoz Ferrandis (ex-Hugging Face AI Counsel).
 
 ### Contacts
@@ -794,7 +796,7 @@
 **Website:** antimetal.com
 **Industry:** AI Infra Automation / Cloud Cost Optimization
 **Stage:** Series A ($20M led by Sound Ventures, ~$24.3M total; backers include Nat Friedman, Daniel Gross, Aravind Srinivas, Aaron Levie)
-**Hiring:** Yes — Backend Engineer, Platform Engineer (NYC preferred, open to exceptional remote)
+**Hiring:** Not hiring for my experience level — open roles (Backend Engineer, Platform Engineer) skew more senior than Raj currently has
 **What they do:** An infrastructure intelligence platform that investigates, resolves, and prevents cloud infrastructure issues automatically, giving engineers their time back and cutting cloud costs. Founded 2022 by Matthew Parkhurst (CEO) and Shreyas Iyer (CTO, Harvard).
 
 ### Contacts

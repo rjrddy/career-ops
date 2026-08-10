@@ -50,13 +50,16 @@ Every cover letter must show genuine fondness for the company, their products, c
 ### 11. L3Harris Location
 Always use **Dallas, TX** for L3Harris location in all CVs. Never use Greenville, TX or any other city.
 
-### 12. Keep This File Updated
+### 12. Avoid Excess Whitespace — Default to 4 Experience Blocks
+Never drop FuTURES or HEXstream preemptively "just in case" of a 2-page overflow. Start every new CV with all 4 experience blocks (L3Harris, Doxy.me, FuTURES, HEXstream). Only drop HEXstream (then shorten FuTURES) if the actual compile comes back at 2 pages. Dropping blocks preemptively leaves large `\vspace{\stretch{1}}` gaps and looks sparse. Confirmed after the Huxley Tokyo CV came back with excess whitespace from only 2 experience blocks.
+
+### 13. Keep This File Updated
 Whenever a new rule is added, a new CV is generated, or any convention changes, update `RAJ_AGENTS.md` immediately.
 
-### 13. How Raj Got the Doxy.me Role
+### 14. How Raj Got the Doxy.me Role
 Raj cold-emailed the Doxy.me CTO and proposed building a telehealth mental health detection portal. He built it independently: an ML model that predicted likelihood of depression, anxiety, and other mental health conditions based on tone, voice, and visual cues, integrated with WebRTC for real-time video capture. The project led directly to the Software Engineer role. Use this origin story when writing cover letters or outreach for health tech, AI/ML, or startup roles — it demonstrates cold outreach + shipping a real product to land the job.
 
-### 14. NYC Startup Cold Outreach
+### 15. NYC Startup Cold Outreach
 When Raj is cold outreaching to NYC startups (via LinkedIn or Wellfound), always use `output/nyc/nyc-startup-general.pdf` as the attached CV unless a tailored CV already exists for that company. Use the outreach message templates below, filling in the company name and one specific detail about what they build.
 
 **Every outreach message must convey:**
@@ -231,6 +234,18 @@ For roles requiring PHP mention at HEXstream (e.g. Glimmer), write an inline blo
 | `bilt-backend-nyc` | Bilt Rewards | Backend Engineer |
 | `slingshot-ai-eng-nyc` | Slingshot AI | Software Engineer, AI/ML |
 | `footprint-backend-nyc` | Footprint | Backend Engineer |
+| `happyrobot-fde-nyc` | HappyRobot | Forward Deployed Engineer |
+| `hyperfold-ai-swe-nyc` | Hyperfold AI | Software Engineer |
+| `distyl-ai-backend-swe-nyc` | Distyl AI | Software Engineer, Back End |
+| `cozmo-fde-nyc` | Cozmo | Forward Deployed Engineer |
+| `ornn-junior-swe-nyc` | Ornn | Junior Software Engineer |
+| `charta-health-staff-swe` | Charta Health | Staff Software Engineer |
+| `enigma-data-ops-associate-nyc` | Enigma | Data Operations Associate |
+| `amplitude-tech-support-eng-nyc` | Amplitude | Technical Support Engineer |
+| `kadence-fde-nyc` | Kadence | Founding Forward Deployed Engineer |
+| `reflection-ai-training-infra` | Reflection AI | Training Infrastructure Engineer |
+| `atomic-fde-nyc` | Atomic | Forward Deployed Engineer |
+| `open-insurance-gtm-eng-nyc` | Open Insurance | Founding GTM Engineer |
 
 ### Seattle (`output/seattle/`)
 | Slug | Company | Role |
@@ -242,11 +257,18 @@ For roles requiring PHP mention at HEXstream (e.g. Glimmer), write an inline blo
 | Slug | Company | Role |
 |------|---------|------|
 | `drw-risk-swe` | DRW | Software Engineer, Risk Platform |
+| `happyrobot-fde-chicago` | HappyRobot | Forward Deployed Engineer |
 
 ### SF Bay Area (`output/sf/`)
 | Slug | Company | Role |
 |------|---------|------|
 | `luma-fde-sf` | Luma AI | Forward Deployed Engineer |
+| `happyrobot-fde-sf` | HappyRobot | Forward Deployed Engineer |
+
+### Barcelona (`output/barcelona/`)
+| Slug | Company | Role |
+|------|---------|------|
+| `happyrobot-fde-barcelona` | HappyRobot | Forward Deployed Engineer |
 
 ### Remote (`output/remote/`)
 | Slug | Company | Role |
@@ -254,6 +276,7 @@ For roles requiring PHP mention at HEXstream (e.g. Glimmer), write an inline blo
 | `alinia-ml-infra-remote` | Alinia AI | Machine Learning Engineer, Infra & Deployment |
 | `krepling-fullstack-remote` | Krepling | Fullstack Software Engineer |
 | `midpage-ai-eng-remote` | midpage | Senior Software Engineer |
+| `zovu-fullstack-remote` | ZOVU | Full-Stack Developer |
 
 ### Austin (`output/austin/`)
 | Slug | Company | Role |
@@ -298,6 +321,9 @@ For roles requiring PHP mention at HEXstream (e.g. Glimmer), write an inline blo
 | `yodo-labs-eoi-tokyo` | Yodo Labs | Software Engineer (Expression of Interest) |
 | `bloomtech-ai-fde-tokyo` | Listed JP Fintech Group (Bloomtech AI) | AI Software Engineer / Forward Deployed Engineer |
 | `treasure-ai-pe-tokyo` | Treasure AI | Productivity Engineer |
+| `morgan-stanley-rpe-tokyo` | Morgan Stanley | Associate, Reliability & Production Engineering |
+| `huxley-voice-ai-fullstack-tokyo` | Confidential Voice AI Startup (via Huxley) | Full-Stack Engineer |
+| `terra-swe-nyc` | Terra | Software Engineer |
 
 ---
 
