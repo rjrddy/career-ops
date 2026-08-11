@@ -1,24 +1,19 @@
 # Personal data (user fills these)
 cv.md
-article-digest.md
-local/
-# Everything under data/ is generated or personal at runtime — only .gitkeep
-# placeholders are tracked (verify with `git ls-files data/`). A blanket rule
-# means a new generated file (e.g. a future log/cache addition) is covered
-# for every user automatically, with no per-filename .gitignore update needed.
-data/*
-!data/.gitkeep
-!data/offers/
-!data/parser-output/
-# Received offers/contracts, promise notes, prep reports (PII — never commit)
-data/offers/*
-!data/offers/.gitkeep
-data/parser-output/**
-!data/parser-output/**/
+data/applications.md
+data/applications.db
+data/follow-ups.md
+data/pipeline.md
+data/scan-history.tsv
+data/pdf-index.tsv
+data/parser-output/**/*.json
 !data/parser-output/.gitkeep
 !data/parser-output/**/.gitkeep
+data/cache/ats-companies/
 reports/*.md
 !reports/.gitkeep
+output/*
+!output/.gitkeep
 batch/logs/*
 !batch/logs/.gitkeep
 batch/batch-state.tsv
@@ -38,7 +33,6 @@ jds/*
 
 # Interview prep (accumulated STAR+R stories — user data)
 interview-prep/*
-!interview-prep/
 !interview-prep/.gitkeep
 # Session transcripts hold real interviewer names/companies — ignore content,
 # ship only the system-owned scaffold (README + .gitkeep). #1242
@@ -53,15 +47,11 @@ writing-samples/*
 
 # User config and customization (never auto-updated)
 config/profile.yml
-config/cv-facts.json
-config/benchmarks.yml
 portals.yml
 modes/_profile.md
 modes/_custom.md
-modes/_brief.md
 .update-dismissed
 .update-lock
-.manifesto-noted
 
 # Plugin layer — opt-in toggles + user-installed plugins + integrity lock (never auto-updated)
 config/plugins.yml
@@ -76,10 +66,6 @@ plugins.lock
 **/.env*.local
 **/*.tsbuildinfo
 
-# LaTeX compile byproducts (not real outputs)
-output/**/*.aux
-output/**/*.log
-
 # Generated
 .resolved-prompt-*
 node_modules/
@@ -93,11 +79,8 @@ bun.lock
 # Report-number reservation sentinels (ephemeral, created by reserve-report-num.mjs)
 reports/*-RESERVED.md
 
-# Backup files. Two shapes exist: `{file}.bak` (normalize-statuses.mjs,
-# dedup-tracker.mjs, tracker.mjs) and `{file}.bak-{ISO timestamp}`
-# (web/src/lib/core/safe-write.ts). A plain `*.bak` glob misses the timestamped
-# form, which for cv.md or portals.yml leaves a file holding the same PII as the
-# original sitting untracked in the repo root. Trailing `*` covers both.
+# Backup files written by normalize-statuses.mjs / dedup-tracker.mjs and
+# web/src/lib/core/safe-write.ts (timestamped user-layer snapshots).
 *.bak*
 
 # OpenRouter runner — generated data (personal, never commit)
@@ -108,38 +91,20 @@ data/model-blacklist.json
 *.mov
 *.mp4
 
-# IDE-specific local config
-.idea/
-.vscode/
-
 # CLI-specific local config
 .claude/settings.local.json
 .claude/memory/
 .opencode/settings.local.json
 .opencode/memory/
-# OpenCode project config (often holds personal MCP/model/per-machine prefs).
-opencode.json
-# Claude Code project-level MCP server config — commonly ends up holding
-# personal server credentials (e.g. a plugin's API token) once a user adds
-# an MCP server, same risk class as .env.
-.mcp.json
 career-dashboard
 career-dashboard.exe
 package-lock.json
-!web/package-lock.json
 
 # Playwright MCP server run artifacts (ephemeral, machine-local)
 .playwright-mcp/
-test-results/
-playwright-report/
 
 # Planning (local scratchpad)
 plan/
 
-# Web — runtime cache/history the dashboard writes locally; nothing here is tracked.
-.career-ops-web/
-
-# Upgrade-test fixtures are fictional system-layer data, never user data
-# (see DATA_CONTRACT.md). Re-include them past the unanchored user-layer
-# patterns above (cv.md, portals.yml).
-!test-fixtures/**
+# The experimental web UI ships via its own component, never in the npm package
+web/
